@@ -1,0 +1,135 @@
+Here is the explanation of the code 
+
+# Import the random module for generating random numbers
+import random
+
+# Define a function to simulate rolling a dice
+def roll():
+    # Set the minimum and maximum values for the dice roll
+    min_value = 1
+    max_value = 6
+    
+    # Generate a random number between the minimum and maximum values
+    roll = random.randint(min_value, max_value)
+    
+    # Return the rolled value
+    return roll
+
+# Initialize the value of the dice roll
+value = roll()
+
+# Main game loop
+while True:
+    # Ask the user for the number of players
+    players = input("Enter the number of players (2 - 4): ")
+    
+    # Validate the input
+    if players.isdigit():
+        # Convert the input to an integer
+        players = int(players)
+        
+        # Check if the number of players is within the allowed range
+        if 2 <= players <= 4:
+            # Break out of the loop if the input is valid
+            break
+        else:
+            # Print an error message if the input is not within the allowed range
+            print("Must be between 2-4 players")
+    else:
+        # Print an error message if the input is not a digit
+        print("Invalid, try again")
+
+# Set the target score
+max_score = 50
+
+# Initialize the player scores
+player_scores = [0 for _ in range(players)]
+
+# Main game loop
+while max(player_scores) < max_score:
+    # Loop through each player
+    for player_idx in range(players):
+        # Print a message announcing the player's turn
+        print("\nPlayer number", player_idx + 1, "turn has just started")
+        
+        # Print the player's current score
+        print("Your total score is", player_scores[player_idx], "\n")
+        
+        # Initialize the current score for the turn
+        current_score = 0
+        
+        # Loop until the player chooses to hold
+        while True:
+            # Ask the player if they want to roll
+            should_roll = input("Would you like to roll (y)? ")
+            
+            # Check if the player wants to roll
+            if should_roll.lower() != "y":
+                # Break out of the loop if the player chooses to hold
+                break
+            
+            # Roll the dice
+            value = roll()
+            
+            # Check if the player rolled a 1
+            if value == 1:
+                # Print a message indicating the player rolled a 1
+                print("You have rolled a 1 Turn done!")
+                
+                # Reset the current score for the turn
+                current_score = 0
+                
+                # Break out of the loop
+                break
+            else:
+                # Add the rolled value to the current score for the turn
+                current_score += value
+                
+                # Print a message indicating the rolled value
+                print("You rolled a", value)
+                
+                # Print the current score for the turn
+                print("Your score is:", current_score)
+        
+        # Add the current score for the turn to the player's total score
+        player_scores[player_idx] += current_score
+        
+        # Print the player's updated total score
+        print("Your total score is:", player_scores[player_idx])
+
+# Determine the winner
+max_score = max(player_scores)
+winning_idx = player_scores.index(max_score)
+
+# Print the winner's information
+print("Player number", winning_idx + 1, "is the winner with a score of:", max_score)
+```
+
+This code is a simple implementation of the Pig dice game, which is a game of risk and reward. Here's how it works:
+
+1. **Initialization**:
+   - The game starts by asking the user to enter the number of players (2 to 4).
+   - The `player_scores` list is initialized with zeros, representing each player's initial score.
+
+2. **Main Loop**:
+   - The game continues until one of the players reaches or exceeds the target score of 50 points.
+   - Inside the main loop, each player takes turns.
+   - For each player's turn:
+     - The current player's turn is announced.
+     - The player's current total score is displayed.
+     - The player's current score for the turn is initialized to 0.
+
+3. **Rolling the Dice**:
+   - The player is prompted to roll the dice.
+   - If the player rolls a 1, the current score for the turn is reset to 0, and the turn ends.
+   - If the player rolls any other number, it is added to the current score for the turn.
+   - The current score for the turn is displayed.
+
+4. **Choosing to Hold or Roll Again**:
+   - The player is asked if they want to roll again or hold.
+   - If the player chooses to roll again, the process repeats.
+   - If the player chooses to hold, their turn total is added to their score, and it becomes the next player's turn.
+
+5. **Winning the Game**:
+   - Once the main loop ends (when a player reaches or exceeds the target score), the winner is determined by finding the maximum score in the `player_scores` list.
+   - The winning player's number (index + 1) and their score are displayed.

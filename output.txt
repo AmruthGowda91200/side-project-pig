@@ -1,0 +1,157 @@
+Output 1 (3 players):
+
+Enter the number of players (2 - 4): 3
+
+Player number 1 turn has just started
+Your total score is  0
+
+would you like to roll (y)? y
+You rolled a  4
+Your score is : 4
+Your total score is : 4
+
+Player number 2 turn has just started
+Your total score is  0
+
+would you like to roll (y)? y
+You rolled a  2
+Your score is : 2
+Your total score is : 2
+
+Player number 3 turn has just started
+Your total score is  0
+
+would you like to roll (y)? y
+You rolled a  6
+Your score is : 6
+Your total score is : 6
+
+Player number 1 turn has just started
+Your total score is  4
+
+would you like to roll (y)? y
+You rolled a  3
+Your score is : 7
+Your total score is : 11
+
+Player number 2 turn has just started
+Your total score is  2
+
+would you like to roll (y)? y
+You rolled a  5
+Your score is : 7
+Your total score is : 9
+
+Player number 3 turn has just started
+Your total score is  6
+
+would you like to roll (y)? y
+You rolled a  1
+You have rolled a 1 Turn done!
+Your total score is : 6
+
+Player number 1 turn has just started
+Your total score is  11
+
+would you like to roll (y)? y
+You rolled a  2
+Your score is : 13
+Your total score is : 24
+
+Player number 2 turn has just started
+Your total score is  9
+
+would you like to roll (y)? y
+You rolled a  4
+Your score is : 13
+Your total score is : 22
+
+Player number 3 turn has just started
+Your total score is  6
+
+would you like to roll (y)? y
+You rolled a  3
+Your score is : 9
+Your total score is : 15
+
+Player number 1 turn has just started
+Your total score is  24
+
+would you like to roll (y)? y
+You rolled a  5
+Your score is : 29
+Your total score is : 53
+
+Player number 1 is the winner with a score of : 53
+
+
+Output 2 (2 players):
+
+
+Enter the number of players (2 - 4): 2
+
+Player number 1 turn has just started
+Your total score is  0
+
+would you like to roll (y)? y
+You rolled a  4
+Your score is : 4
+Your total score is : 4
+
+Player number 2 turn has just started
+Your total score is  0
+
+would you like to roll (y)? y
+You rolled a  2
+Your score is : 2
+Your total score is : 2
+
+Player number 1 turn has just started
+Your total score is  4
+
+would you like to roll (y)? y
+You rolled a  1
+You have rolled a 1 Turn done!
+Your total score is : 4
+
+Player number 2 turn has just started
+Your total score is  2
+
+would you like to roll (y)? y
+You rolled a  5
+Your score is : 7
+Your total score is : 9
+
+Player number 1 turn has just started
+Your total score is  4
+
+would you like to roll (y)? y
+You rolled a  3
+Your score is : 7
+Your total score is : 11
+
+Player number 2 turn has just started
+Your total score is  9
+
+would you like to roll (y)? y
+You rolled a  6
+Your score is : 15
+Your total score is : 24
+
+Player number 1 turn has just started
+Your total score is  11
+
+would you like to roll (y)? y
+You rolled a  2
+Your score is : 13
+Your total score is : 24
+
+Player number 2 turn has just started
+Your total score is  24
+
+would you like to roll (y)? y
+You rolled a  3
+Your score is : 27
+Your total score is : 51
+
+Player number 2 is the winner with a score of : 51
